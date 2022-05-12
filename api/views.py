@@ -7,7 +7,8 @@ from .models import Room
 
 #View to return room objects and view the fields outlined in RoomSerializer which is pulled from the class outlined in the models.
 
+
 class RoomView(generics.ListAPIView):
-    queryset = Room.objects.all()
+    queryset = Room.objects.all() #queries the information from the defined model
     serializer_class = RoomSerializer
 

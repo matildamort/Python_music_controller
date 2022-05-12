@@ -14,6 +14,8 @@ def generate_unique_code():
 #return code
 
 # Create your models here.
+
+#Difining the attributes of a room as a model
 class Room(models.Model):
     code = models.CharField(max_length=10, default ="" , unique = True)
     #Creates host and limits each room to only have one host per room.
@@ -24,4 +26,4 @@ class Room(models.Model):
 
     
 
-    
+
